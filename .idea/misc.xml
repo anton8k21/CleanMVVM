@@ -19,6 +19,9 @@
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/backgroud_button_close.xml" value="0.1655" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/backgroud_my_card.xml" value="0.1735" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/background_button_close.xml" value="0.1" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/background_button_close_down.xml" value="0.19" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/background_button_color_phone.xml" value="0.19" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/background_button_color_phone2.xml" value="0.19" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/background_my_card.xml" value="0.1" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.2155" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.2155" />
@@ -42,14 +45,15 @@
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/carousel_item.xml" value="0.2191780821917808" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_blank.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_card.xml" value="0.264" />
-        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_filter_options_item.xml" value="0.1" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_details_screen.xml" value="0.2" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_filter_options_item.xml" value="0.16" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_home_screen.xml" value="0.16" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_info_phone.xml" value="0.264" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_item.xml" value="0.25" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_item_list.xml" value="0.2359375" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_item_list2.xml" value="0.24615384615384617" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_list_my_card.xml" value="0.25" />
-        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_my_cart_screen.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/fragment_my_cart_screen.xml" value="0.136" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/recycle_item_home.xml" value="0.1902497027348395" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/recycle_item_my_card.xml" value="0.1902497027348395" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/menu/menu_buttom_nav.xml" value="0.25" />

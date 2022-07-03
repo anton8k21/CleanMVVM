@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.test.R
 import com.example.test.databinding.FragmentDetailsScreenBinding
 import com.example.test.detailsScreen.AdapterDetailsCarousel
 import com.example.test.detailsScreen.presentation.ViewModelDetailsScreen
@@ -38,6 +40,14 @@ class FragmentDetailsScreen: Fragment() {
                 star3.isVisible = it.rating >= 3
                 star4.isVisible = it.rating >= 4
                 star5.isVisible = it.rating >= 5
+
+                closeDetailsScreen.setOnClickListener {
+                    findNavController().navigateUp()
+                }
+
+                buttonOpenMyCart.setOnClickListener {
+                    findNavController().navigate(R.id.action_fragmentInfo_to_myCard)
+                }
             }
         }
         return binding.root

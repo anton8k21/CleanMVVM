@@ -3,18 +3,18 @@ package com.example.test.presentation.viewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.test.myCartScreen.ApiServiceMyCard
-import com.example.test.data.dataModel.myCartScreen.MyCartDataModel
 import com.example.test.app.data.repositoryImpl.RepositoryMyCartScreenImpl
+import com.example.test.data.ApiService.ApiService
 import com.example.test.data.dataModel.myCartScreen.MyCartDomainModel
 import com.example.test.domain.useCase.GetMyCartPhone
 import kotlinx.coroutines.launch
 
 class ViewModelMyCartScreen: ViewModel() {
-    var data: MutableLiveData<MyCartDomainModel> = MutableLiveData()
+    private var _data: MutableLiveData<MyCartDomainModel> = MutableLiveData()
+    val data: MutableLiveData<MyCartDomainModel> = _data
 
     private val repositoryMyCart by lazy {
-        RepositoryMyCartScreenImpl(ApiServiceMyCard)
+        RepositoryMyCartScreenImpl(ApiService)
     }
 
     private val getMyCartUseCase by lazy {

@@ -13,7 +13,7 @@
         android:background="#F8F8F8">
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/close_my_cart"
             style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="38dp"
             android:layout_height="38dp"
@@ -34,9 +34,9 @@
             android:backgroundTint="#FF6E4E"
             android:layout_marginEnd="30dp"
             android:src="@drawable/ic_baseline_edit_location_24"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintBottom_toBottomOf="@+id/close_my_cart"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@+id/close_my_cart"
             app:tint="#FFFFFF" />
 
         <TextView
@@ -49,6 +49,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
             app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintStart_toEndOf="@+id/close_my_cart"
             app:layout_constraintTop_toTopOf="@+id/imageButton3" />
 
         <TextView

@@ -12,14 +12,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.test.R
 import com.example.test.databinding.FragmentFilterOptionsItemBinding
 import com.example.test.databinding.FragmentHomeScreenBinding
-
 import com.example.test.homeScreen.presentation.adapter.AdapterHomeCarousel
 import com.example.test.homeScreen.presentation.adapter.AdapterHomeScreen
 import com.example.test.homeScreen.presentation.adapter.OnInteractionListener
 import com.example.test.presentation.viewModel.ViewModelHomeScreen
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
-class FragmentHomeScreen: Fragment() {
+class FragmentHomeScreen : Fragment() {
     private val viewModel: ViewModelHomeScreen by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,26 +27,39 @@ class FragmentHomeScreen: Fragment() {
     ): View {
         val binding = FragmentHomeScreenBinding.inflate(layoutInflater)
 
-        val crimeRecyclerView =
+        val recyclerView =
             binding.root.findViewById(R.id.list) as RecyclerView
-        crimeRecyclerView.layoutManager = GridLayoutManager(context,2)
+        recyclerView.layoutManager = GridLayoutManager(context, 2)
 
 
         viewModel.data.observe(viewLifecycleOwner) {
             val adapterCarousel = AdapterHomeCarousel(it.homeStore)
             binding.constraint2.adapter = adapterCarousel
 
-            val adapterRecyclerView = AdapterHomeScreen(it.bestSeller, object:OnInteractionListener {
-                override fun openInfo() {
-                findNavController().navigate(R.id.action_homeScreen_to_fragmentInfo)
-                }
-            })
+            val adapterRecyclerView =
+                AdapterHomeScreen(it.bestSeller, object : OnInteractionListener {
+                    override fun openInfo() {
+                        findNavController().navigate(R.id.action_homeScreen_to_fragmentInfo)
+                    }
+                })
             binding.list.adapter = adapterRecyclerView
         }
 
         binding.apply {
+            bottomNavigation.setOnItemSelectedListener { item ->
+                when (item.itemId) {
+                    R.id.my_cart -> {
+                        findNavController().navigate(R.id.action_homeScreen_to_myCard)
+                        true
+                    }
+                    else -> false
+                }
+            }
+
             buttonCategoryPhone.setOnClickListener {
-                findNavController().navigate(R.id.action_homeScreen_to_myCard)
+                buttonCategoryBooks.isChecked = false
+                buttonCategoryComputer.isChecked = false
+                buttonCategoryHealth.isChecked = false
             }
 
             buttonCategoryComputer.setOnClickListener {
@@ -66,20 +78,25 @@ class FragmentHomeScreen: Fragment() {
                 buttonCategoryPhone.isChecked = false
                 buttonCategoryComputer.isChecked = false
                 buttonCategoryHealth.isChecked = false
-
             }
 
 
 
             filter.setOnClickListener {
+                val bindingDialog =
+                    FragmentFilterOptionsItemBinding.inflate(layoutInflater)
                 val bottomSheetDialog =
                     BottomSheetDialog(binding.root.context, R.style.BottomSheetDialog)
                 val bottomSheetDialogView: View =
-                    FragmentFilterOptionsItemBinding.inflate(layoutInflater).bottomDialog
+                    bindingDialog.bottomDialog
+
                 bottomSheetDialog.setContentView(bottomSheetDialogView)
                 bottomSheetDialog.show()
-            }
 
+                bindingDialog.closeFilter.setOnClickListener {
+                    bottomSheetDialog.dismiss()
+                }
+            }
         }
         return binding.root
     }

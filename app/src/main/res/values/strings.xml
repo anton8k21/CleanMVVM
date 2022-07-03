@@ -3,10 +3,27 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string-array name="catNames">
-        <item>Барсик</item>
-        <item>Мурзик</item>
-        <item>Васька</item>
-        <item>Рыжик</item>
+    <string-array name="Brand">
+        <item>-</item>
+        <item>Samsung</item>
+        <item>Iphone</item>
+        <item>Fly</item>
+        <item>Xiaomi</item>
+    </string-array>
+
+    <string-array name="Price">
+        <item>-</item>
+        <item>up to 1000$</item>
+        <item>up to 2000$</item>
+        <item>up to 3000$</item>
+        <item>up to 4000$</item>
+    </string-array>
+
+    <string-array name="Size">
+        <item>-</item>
+        <item>1080x2340</item>
+        <item>1440x2560</item>
+        <item>1080x2220</item>
+        <item>1440x2960</item>
     </string-array>
 </resources>

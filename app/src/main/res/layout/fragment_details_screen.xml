@@ -28,7 +28,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageButton
-                    style="@style/Widget.AppCompat.ImageButton"
+                    android:id="@+id/close_details_screen"
                     android:layout_width="37dp"
                     android:layout_height="37dp"
                     android:background="@drawable/background_button_close"
@@ -50,6 +50,7 @@
 
                 <ImageButton
                     style="@style/Widget.AppCompat.ImageButton"
+                    android:id="@+id/button_open_my_cart"
                     android:layout_width="38dp"
                     android:layout_height="38dp"
                     android:background="@drawable/background_button_close"
@@ -109,6 +110,7 @@
                         app:tint="#FFFFFF" />
 
                     <LinearLayout
+                        android:id="@+id/linearLayout5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -120,35 +122,35 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone"/>
+                            android:visibility="gone" />
 
                         <ImageView
                             android:id="@+id/star_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone"/>
+                            android:visibility="gone" />
 
                         <ImageView
                             android:id="@+id/star_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone"/>
+                            android:visibility="gone" />
 
                         <ImageView
                             android:id="@+id/star_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone"/>
+                            android:visibility="gone" />
 
                         <ImageView
                             android:id="@+id/star_5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone"/>
+                            android:visibility="gone" />
 
 
                     </LinearLayout>
@@ -299,6 +301,31 @@
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/add_to_cart"
                         app:layout_constraintStart_toStartOf="@+id/add_to_cart" />
+
+
+                    <ImageButton
+                        android:id="@+id/color_phone"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:background="@drawable/background_button_color_phone2"
+                        android:src="@drawable/ic_baseline_done_24"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView"
+                        app:layout_constraintTop_toBottomOf="@+id/textView"
+                        app:tint="#FFFFFF" />
+
+
+                    <ImageButton
+                        android:id="@+id/color_phone2"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/background_button_color_phone"
+                        android:paddingStart="10dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toEndOf="@+id/color_phone"
+                        app:layout_constraintTop_toBottomOf="@+id/textView"
+                        app:tint="#FFFFFF" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/add_to_cart"
