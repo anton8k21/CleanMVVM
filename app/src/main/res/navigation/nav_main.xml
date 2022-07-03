@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.test.presentation.screen.FragmentHomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreen_to_fragmentInfo"
+            app:destination="@id/fragmentInfo" />
+        <action
+            android:id="@+id/action_homeScreen_to_myCard"
+            app:destination="@id/myCard" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInfo"
+        android:name="com.example.test.presentation.screen.FragmentDetailsScreen"
+        android:label="FragmentInfo"
+        tools:layout="@layout/fragment_details_screen">
+        <action
+            android:id="@+id/action_fragmentInfo_to_myCard"
+            app:destination="@id/myCard" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCard"
+        android:name="com.example.test.presentation.screen.FragmentMyCartScreen"
+        android:label="MyCard"
+        tools:layout="@layout/fragment_my_cart_screen"/>
+</navigation>
