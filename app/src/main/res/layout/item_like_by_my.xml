@@ -4,41 +4,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintItem"
-    android:layout_width="181dp"
-    android:layout_height="227dp"
+    android:layout_width="match_parent"
+    android:layout_height="167dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
     android:layout_marginTop="5dp"
-    android:layout_marginBottom="4dp"
-    android:background="@drawable/back_card_view"
+    android:layout_marginBottom="8dp"
+    android:paddingEnd="10dp"
+    android:background="#010035"
     android:elevation="2dp"
     app:cardPreventCornerOverlap="false">
 
-    <ImageView
-        android:id="@+id/phone_image"
-        android:scaleType="fitXY"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="60dp"
-        android:src="@drawable/samsung_image"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/phone_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/samsung_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/phone_prise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="7dp"
         android:text="$1,047"
         android:textAlignment="center"
-        android:textColor="#010035"
-        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:layout_marginStart="20dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_image" />
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/name_phone"
@@ -46,8 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Samsung Note 20 Ultra"
-        android:textColor="#010035"
-        android:textSize="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="@+id/phone_prise"
         app:layout_constraintTop_toBottomOf="@+id/phone_prise" />
 
@@ -59,24 +71,22 @@
         android:background="@drawable/line"
         android:text="$1,500"
         android:textColor="#CCCCCC"
-        android:textSize="10dp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/phone_prise"
         app:layout_constraintStart_toEndOf="@+id/phone_prise" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/like"
         style="@style/Widget.AppTheme.LikeCheckBox"
-        android:layout_width="30dp"
-        android:layout_height="20dp"
-        android:elevation="4dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
         android:background="@drawable/back_bottom_nav"
-        app:icon="@drawable/like"
         android:checkable="true"
+        android:elevation="4dp"
         app:cornerRadius="30dp"
+        android:layout_marginBottom="20dp"
+        app:icon="@drawable/like"
         app:iconGravity="textEnd"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

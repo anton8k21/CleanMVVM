@@ -16,7 +16,7 @@ import com.example.test.myCartScreen.AdapterMyCart
 import com.example.test.presentation.viewModel.ViewModelMyCartScreen
 
 class FragmentMyCartScreen : Fragment() {
-    val viewModel: ViewModelMyCartScreen by activityViewModels()
+    private val viewModel: ViewModelMyCartScreen by activityViewModels()
 
     @SuppressLint("SetTextI18n")
     override fun onCreateView(

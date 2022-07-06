@@ -32,17 +32,32 @@ class FragmentHomeScreen : Fragment() {
         recyclerView.layoutManager = GridLayoutManager(context, 2)
 
 
+
+        viewModel.dataBest.observe(viewLifecycleOwner){
+            val adapterRecyclerView =
+                AdapterHomeScreen(it, object : OnInteractionListener {
+                    override fun openInfo() {
+                        findNavController().navigate(R.id.action_homeScreen_to_fragmentInfo)
+                    }
+
+                    override fun likeById(id: Long) {
+                        viewModel.like(id)
+                    }
+
+                    override fun disLike(id: Long) {
+                        viewModel.disLike(id)
+                    }
+                })
+
+            binding.list.adapter = adapterRecyclerView
+        }
+
+
         viewModel.data.observe(viewLifecycleOwner) {
             val adapterCarousel = AdapterHomeCarousel(it.homeStore)
             binding.constraint2.adapter = adapterCarousel
 
-            val adapterRecyclerView =
-                AdapterHomeScreen(it.bestSeller, object : OnInteractionListener {
-                    override fun openInfo() {
-                        findNavController().navigate(R.id.action_homeScreen_to_fragmentInfo)
-                    }
-                })
-            binding.list.adapter = adapterRecyclerView
+
         }
 
         binding.apply {
@@ -50,6 +65,10 @@ class FragmentHomeScreen : Fragment() {
                 when (item.itemId) {
                     R.id.my_cart -> {
                         findNavController().navigate(R.id.action_homeScreen_to_myCard)
+                        true
+                    }
+                    R.id.list_is_like -> {
+                        findNavController().navigate(R.id.action_homeScreen_to_fragmentMyLikePhone)
                         true
                     }
                     else -> false

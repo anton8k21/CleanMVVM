@@ -4,7 +4,9 @@
 + retrofit
 + LiveData
 + ViewBinding
-+ materialDesing
++ materialDesign
++ coroutines
++ room
 + Архетектура MVVM + Clean
 
 ## Функционал приложения
@@ -21,6 +23,5 @@
 ![](https://github.com/anton8k21/images/blob/main/my%20work/CART.png?raw=true)
 
 ## В разработке
-+ База данных для сохранения списка понравившегося товара(буду использовать room)
 + Dagger hilt
 + Увеличение функционала

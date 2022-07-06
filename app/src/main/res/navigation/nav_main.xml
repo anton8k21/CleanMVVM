@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeScreen_to_myCard"
             app:destination="@id/myCard" />
+        <action
+            android:id="@+id/action_homeScreen_to_fragmentMyLikePhone"
+            app:destination="@id/fragmentMyLikePhone" />
     </fragment>
     <fragment
         android:id="@+id/fragmentInfo"
@@ -31,4 +34,13 @@
         android:name="com.example.test.presentation.screen.FragmentMyCartScreen"
         android:label="MyCard"
         tools:layout="@layout/fragment_my_cart_screen"/>
+    <fragment
+        android:id="@+id/fragmentMyLikePhone"
+        android:name="com.example.test.presentation.screen.FragmentMyLikePhone"
+        android:label="FragmentMyLikePhone"
+        tools:layout="@layout/fragment_my_like_phone">
+        <action
+            android:id="@+id/action_fragmentMyLikePhone_to_fragmentInfo"
+            app:destination="@id/fragmentInfo" />
+    </fragment>
 </navigation>

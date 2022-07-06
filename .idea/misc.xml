@@ -57,6 +57,19 @@
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/recycle_item_home.xml" value="0.1902497027348395" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/layout/recycle_item_my_card.xml" value="0.1902497027348395" />
         <entry key="..\:/Users/kanto/AndroidStudioProjects/test/app/src/main/res/menu/menu_buttom_nav.xml" value="0.25" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable-v24/back_category_dutton.xml" value="0.1845" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable-v24/background_button_close.xml" value="0.1845" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable-v24/background_button_close_up.xml" value="0.1845" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable-v24/background_button_li.xml" value="0.1845" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable-v24/background_button_like_down.xml" value="0.1115" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable-v24/background_button_like_up.xml" value="0.1115" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable/back_category_dutton_check.xml" value="0.1845" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/drawable/background_button_close_down.xml" value="0.1845" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/layout/fragment_home_screen.xml" value="0.25" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/layout/fragment_my_cart_screen.xml" value="0.25" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/layout/fragment_my_like_phone.xml" value="0.2" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/layout/item_like_by_my.xml" value="0.25" />
+        <entry key="..\:/Users/kanto/AndroidStudioProjects/test2/CleanMVVM/app/src/main/res/layout/recycle_item_home.xml" value="0.536" />
       </map>
     </option>
   </component>
