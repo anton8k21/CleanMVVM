@@ -28,7 +28,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                 app:layout_constraintEnd_toEndOf="@+id/imageView2"
                 app:layout_constraintStart_toStartOf="@+id/imageView2"
-                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                android:contentDescription="@string/icon_location" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -39,16 +40,17 @@
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
                 app:layout_constraintEnd_toStartOf="@+id/textView2"
                 app:layout_constraintTop_toTopOf="@+id/textView2"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="1.0"
+                android:contentDescription="@string/icon_location" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="21dp"
-                android:text="Zihuatanejo, Gro"
+                android:text="@string/title_location"
                 android:textColor="#000000"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +63,8 @@
                 android:backgroundTint="#F8F8F8"
                 android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
-                app:layout_constraintStart_toEndOf="@+id/textView2" />
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                android:contentDescription="@string/set_location" />
 
             <ImageButton
                 android:id="@+id/filter"
@@ -70,9 +73,9 @@
                 android:backgroundTint="#F8F8F8"
                 android:src="@drawable/filter_icon"
                 app:layout_constraintBottom_toBottomOf="@+id/textView2"
-
                 app:layout_constraintEnd_toEndOf="@+id/textView4"
-                app:layout_constraintTop_toTopOf="@+id/textView2" />
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                android:contentDescription="@string/button_open_filter" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -80,9 +83,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="18dp"
-                android:text="Select Category"
+                android:text="@string/select_category_title"
                 android:textColor="#000000"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -92,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="33dp"
-                android:text="view all"
+                android:text="@string/view_all_title"
                 android:textColor="#FF6E4E"
                 app:layout_constraintBottom_toBottomOf="@+id/textView3"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -134,9 +137,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
-                        android:text="Computer"
+                        android:text="@string/button_phone_title"
                         android:textColor="#000000"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         app:layout_constraintEnd_toEndOf="@+id/floating_action_button2"
                         app:layout_constraintStart_toStartOf="@+id/floating_action_button2"
                         app:layout_constraintTop_toBottomOf="@+id/floating_action_button2" />
@@ -167,9 +170,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
-                        android:text="Phone"
+                        android:text="@string/button_computer_title"
                         android:textColor="#000000"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         app:layout_constraintEnd_toEndOf="@+id/floating_action_button"
                         app:layout_constraintStart_toStartOf="@+id/floating_action_button"
                         app:layout_constraintTop_toBottomOf="@+id/floating_action_button" />
@@ -200,9 +203,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
-                        android:text="Health"
+                        android:text="@string/button_health_title"
                         android:textColor="#000000"
-                        android:textSize="12dp" />
+                        android:textSize="12sp" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -230,9 +233,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
-                        android:text="books"
+                        android:text="@string/button_books_title"
                         android:textColor="#000000"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         app:layout_constraintEnd_toEndOf="@+id/floating_action_button4"
                         app:layout_constraintStart_toStartOf="@+id/floating_action_button4"
                         app:layout_constraintTop_toBottomOf="@+id/floating_action_button4" />
@@ -255,7 +258,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/editText"
                 app:layout_constraintStart_toEndOf="@+id/editText"
                 app:layout_constraintTop_toTopOf="@+id/editText"
-                app:tint="#352E2E" />
+                app:tint="#352E2E"
+                android:contentDescription="@string/set_qr_button" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editText"
@@ -276,9 +280,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="17dp"
                 android:layout_marginTop="24dp"
-                android:text="Hot sales"
+                android:text="@string/hot_sales_title"
                 android:textColor="#000000"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText" />
@@ -290,7 +294,7 @@
                 android:layout_marginEnd="33dp"
                 android:backgroundTint="#F8F8F8"
                 android:elevation="0dp"
-                android:text="see more"
+                android:text="@string/see_more_title"
                 android:textColor="#FF6E4E"
                 app:layout_constraintBottom_toBottomOf="@+id/textVie"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -358,15 +362,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="68dp"
-            android:src="@drawable/img" />
+            android:src="@drawable/img"
+            android:contentDescription="@string/explorer_icon" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
-
-            android:text="Explorer"
+            android:text="@string/explorer_title"
             android:textColor="#FFFFFF" />
 
 
@@ -378,7 +382,7 @@
             app:itemIconSize="27dp"
             app:itemIconTint="@color/white"
             app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/menu_buttom_nav" />
+            app:menu="@menu/menu_bottom_nav" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

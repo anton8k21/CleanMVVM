@@ -37,7 +37,7 @@
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="0dp"
                 tools:src="@drawable/phone"
-                android:contentDescription="TODO" />
+                android:contentDescription="@string/image_phone_carousel" />
 
             <View
                 android:id="@+id/isNew"
@@ -54,9 +54,9 @@
                 android:layout_width="105dp"
                 android:layout_height="35dp"
                 android:backgroundTint="@color/white"
-                android:text="Buy now!"
+                android:text="@string/title_Button_carousel_home"
                 android:textColor="#101010"
-                android:textSize="11dp"
+                android:textSize="11sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="24dp"
                 android:layout_marginStart="22dp"
@@ -67,9 +67,9 @@
                 android:id="@+id/isNew_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New"
+                android:text="@string/title_is_new_phone_carousel"
                 android:textColor="@color/white"
-                android:textSize="10dp"
+                android:textSize="10sp"
                 android:textStyle="bold|italic"
                 app:layout_constraintBottom_toBottomOf="@+id/isNew"
                 app:layout_constraintEnd_toEndOf="@+id/isNew"

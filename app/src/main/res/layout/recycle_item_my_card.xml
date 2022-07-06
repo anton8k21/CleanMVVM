@@ -29,7 +29,8 @@
                 android:layout_width="80dp"
                 android:layout_height="90dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/icon_my_card" />
+                android:src="@drawable/icon_my_card"
+                android:contentDescription="@string/phone_image" />
 
         </androidx.cardview.widget.CardView>
 
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/cardView"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Galaxy Note 20 Ultra" />
@@ -48,9 +49,9 @@
             android:id="@+id/phone_prise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$3000.00"
+            tools:text="$3000.00"
             android:textColor="#FF6E4E"
-            android:textSize="20dp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/title"
             app:layout_constraintTop_toBottomOf="@+id/title" />
 
@@ -61,7 +62,8 @@
             android:layout_marginEnd="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/delete_phone_cart" />
 
 
 

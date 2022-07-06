@@ -9,7 +9,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -36,16 +37,17 @@
                     android:src="@drawable/ic_baseline_arrow_back_ios_24"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tint="#FFFFFF" />
+                    app:tint="#FFFFFF"
+                    android:contentDescription="@string/button_close" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="60dp"
                     android:layout_marginEnd="60dp"
-                    android:text="Product Details"
+                    android:text="@string/title_details_screen"
                     android:textColor="#010035"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <ImageButton
@@ -58,7 +60,8 @@
                     android:src="@drawable/lable"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tint="#FFFFFF" />
+                    app:tint="#FFFFFF"
+                    android:contentDescription="@string/button_my_cart" />
             </LinearLayout>
 
             <androidx.viewpager2.widget.ViewPager2
@@ -92,7 +95,7 @@
                         android:layout_marginTop="28dp"
                         tools:text="Galaxy Note 20 Ultra"
                         android:textColor="#010035"
-                        android:textSize="24dp"
+                        android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -107,7 +110,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/title"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/title"
-                        app:tint="#FFFFFF" />
+                        app:tint="#FFFFFF"
+                        android:contentDescription="@string/button_like" />
 
                     <LinearLayout
                         android:id="@+id/linearLayout5"
@@ -122,35 +126,40 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            android:contentDescription="@string/star"/>
 
                         <ImageView
                             android:id="@+id/star_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            android:contentDescription="@string/star"/>
 
                         <ImageView
                             android:id="@+id/star_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            android:contentDescription="@string/star"/>
 
                         <ImageView
                             android:id="@+id/star_4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            android:contentDescription="@string/star" />
 
                         <ImageView
                             android:id="@+id/star_5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_baseline_star_24"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            android:contentDescription="@string/star"/>
 
 
                     </LinearLayout>
@@ -168,17 +177,17 @@
                         <com.google.android.material.tabs.TabItem
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Shop" />
+                            android:text="@string/shop_details_screen" />
 
                         <com.google.android.material.tabs.TabItem
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Details" />
+                            android:text="@string/details_details_screen" />
 
                         <com.google.android.material.tabs.TabItem
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Features" />
+                            android:text="@string/features_details_screen" />
 
                     </com.google.android.material.tabs.TabLayout>
 
@@ -215,7 +224,8 @@
                                 android:src="@drawable/memory"
                                 app:layout_constraintBottom_toBottomOf="@+id/camera_icon"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/memory" />
 
                             <TextView
                                 android:id="@+id/ssd"
@@ -234,7 +244,8 @@
                                 app:layout_constraintEnd_toStartOf="@+id/cpu_icon"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toEndOf="@+id/memory"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/camera_icon" />
 
                             <TextView
                                 android:id="@+id/camera"
@@ -252,7 +263,8 @@
                                 app:layout_constraintEnd_toStartOf="@+id/sd_image"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toEndOf="@+id/camera_icon"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/cpu_icon" />
 
                             <TextView
                                 android:id="@+id/cpu"
@@ -270,7 +282,8 @@
                                 android:src="@drawable/ic_outline_sd_card_24"
                                 app:layout_constraintBottom_toBottomOf="@+id/cpu_icon"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:contentDescription="@string/sd_image" />
 
                             <TextView
                                 android:id="@+id/sd"
@@ -297,7 +310,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="80dp"
-                        android:text="Select color and capacity"
+                        android:text="@string/select_color_and_capacity"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/add_to_cart"
                         app:layout_constraintStart_toStartOf="@+id/add_to_cart" />
@@ -312,7 +325,8 @@
                         android:layout_marginTop="15dp"
                         app:layout_constraintStart_toStartOf="@+id/textView"
                         app:layout_constraintTop_toBottomOf="@+id/textView"
-                        app:tint="#FFFFFF" />
+                        app:tint="#FFFFFF"
+                        android:contentDescription="@string/color_phone" />
 
 
                     <ImageButton
@@ -325,7 +339,8 @@
                         android:layout_marginStart="10dp"
                         app:layout_constraintStart_toEndOf="@+id/color_phone"
                         app:layout_constraintTop_toBottomOf="@+id/textView"
-                        app:tint="#FFFFFF" />
+                        app:tint="#FFFFFF"
+                        android:contentDescription="@string/color_phone" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/add_to_cart"

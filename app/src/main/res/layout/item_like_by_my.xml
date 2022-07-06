@@ -34,7 +34,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/phone_image" />
     </androidx.cardview.widget.CardView>
 
 
@@ -42,10 +43,10 @@
         android:id="@+id/phone_prise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="$1,047"
+        tools:text="$1,047"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:layout_marginStart="20dp"
         android:textStyle="bold"
         android:layout_marginTop="15dp"
@@ -57,9 +58,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Samsung Note 20 Ultra"
+        tools:text="Samsung Note 20 Ultra"
         android:textColor="#FFFFFF"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/phone_prise"
         app:layout_constraintTop_toBottomOf="@+id/phone_prise" />
 
@@ -69,9 +70,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:background="@drawable/line"
-        android:text="$1,500"
+        tools:text="$1,500"
         android:textColor="#CCCCCC"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/phone_prise"
         app:layout_constraintStart_toEndOf="@+id/phone_prise" />
 

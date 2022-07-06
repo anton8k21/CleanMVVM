@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/bottom_dialog"
@@ -18,7 +17,7 @@
             android:layout_height="58dp"
             android:layout_margin="20dp"
             android:backgroundTint="@color/button"
-            android:text="Done"
+            android:text="@string/button_done_title"
             app:cornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,20 +30,21 @@
             android:background="@drawable/background_button_close"
             android:src="@drawable/ic_baseline_close_24"
             android:textColor="@color/white"
-            android:textSize="19dp"
+            android:textSize="19sp"
             app:cornerRadius="10dp"
             app:iconGravity="textTop"
             app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+            app:layout_constraintTop_toTopOf="@+id/materialButton2"
+            android:contentDescription="@string/button_close" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Filter options"
+            android:text="@string/filter_options_title"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
             app:layout_constraintEnd_toStartOf="@+id/materialButton2"
@@ -54,9 +54,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Brand"
+            android:text="@string/filter_brand_title"
             android:textColor="#010035"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:layout_marginBottom="5dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/spinner"
@@ -76,9 +76,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Price"
+            android:text="@string/filter_price_title"
             android:textColor="#010035"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:layout_marginBottom="5dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/spinner2"
@@ -100,9 +100,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Size"
+            android:text="@string/filter_size_title"
             android:textColor="#010035"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:layout_marginBottom="5dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/spinner3"

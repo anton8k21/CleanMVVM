@@ -3,6 +3,7 @@
 + kotlin
 + retrofit
 + LiveData
++ Flow
 + ViewBinding
 + materialDesign
 + coroutines
