@@ -2,8 +2,9 @@ package com.example.test.domain.useCase
 
 import com.example.test.data.dataModel.detailsScreen.DetailsPhoneDomainModel
 import com.example.test.domain.repository.RepositoryDetailsScreen
+import javax.inject.Inject
 
-class GetDetailsPhone(
+class GetDetailsPhone @Inject constructor(
     private val repositoryDetails: RepositoryDetailsScreen
 ) {
 

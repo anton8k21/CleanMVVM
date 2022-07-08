@@ -20,8 +20,10 @@ import com.example.test.myCartScreen.AdapterMyCart
 import com.example.test.presentation.viewModel.ViewModelHomeScreen
 import com.example.test.presentation.viewModel.ViewModelMyCartScreen
 import com.example.test.presentation.viewModel.ViewModelMyLikePhone
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.recycle_item_my_card.*
 
+@AndroidEntryPoint
 class FragmentMyLikePhone: Fragment() {
     private val viewModel: ViewModelMyLikePhone by activityViewModels()
 

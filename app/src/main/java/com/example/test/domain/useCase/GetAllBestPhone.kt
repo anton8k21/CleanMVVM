@@ -6,8 +6,11 @@ import com.example.test.domain.domainModel.homeScreen.CardBestDomainModel
 import com.example.test.domain.repository.RepositoryHomeScreen
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
 
-class GetAllBestPhone(private val repository: RepositoryHomeScreen) {
+class GetAllBestPhone @Inject constructor(
+    private val repository: RepositoryHomeScreen
+    ) {
     fun get():LiveData<List<CardBestDomainModel>>{
         return repository.data
             .map{ it -> it.map { it.toCardBestDomainModel() }}

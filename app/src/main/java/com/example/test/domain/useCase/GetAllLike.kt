@@ -8,8 +8,11 @@ import com.example.test.domain.repository.RepositoryHomeScreen
 import com.example.test.domain.repository.RepositoryMyLikePhone
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
 
-class GetAllLike(private val repository: RepositoryMyLikePhone) {
+class GetAllLike @Inject constructor(
+    private val repository: RepositoryMyLikePhone
+    ) {
 
     fun get(): LiveData<List<CardBestDomainModel>> {
         return repository.dataMyLike
