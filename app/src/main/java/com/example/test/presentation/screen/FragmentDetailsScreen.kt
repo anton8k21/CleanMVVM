@@ -13,7 +13,9 @@ import com.example.test.R
 import com.example.test.databinding.FragmentDetailsScreenBinding
 import com.example.test.detailsScreen.AdapterDetailsCarousel
 import com.example.test.detailsScreen.presentation.ViewModelDetailsScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FragmentDetailsScreen: Fragment() {
     val viewModel: ViewModelDetailsScreen by activityViewModels()
 

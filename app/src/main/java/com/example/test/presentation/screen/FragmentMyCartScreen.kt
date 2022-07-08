@@ -14,7 +14,9 @@ import com.example.test.R
 import com.example.test.databinding.FragmentMyCartScreenBinding
 import com.example.test.myCartScreen.AdapterMyCart
 import com.example.test.presentation.viewModel.ViewModelMyCartScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FragmentMyCartScreen : Fragment() {
     private val viewModel: ViewModelMyCartScreen by activityViewModels()
 

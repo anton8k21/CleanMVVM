@@ -1,13 +1,15 @@
 package com.example.test.app.data.repositoryImpl
 
-import com.example.test.data.ApiService.ApiService
+import com.example.test.data.ApiService.Api
 import com.example.test.data.dataModel.myCartScreen.MyCartDataModel
 import com.example.test.domain.repository.RepositoryMyCartScreen
 import retrofit2.Response
+import javax.inject.Inject
 
-class RepositoryMyCartScreenImpl(
-    private val apiService: ApiService): RepositoryMyCartScreen {
+class RepositoryMyCartScreenImpl @Inject constructor(
+    private val apiService: Api
+    ): RepositoryMyCartScreen {
     override suspend fun getMyCart(): Response<MyCartDataModel> {
-        return apiService.api.getMyCartPhone()
+        return apiService.getMyCartPhone()
     }
 }

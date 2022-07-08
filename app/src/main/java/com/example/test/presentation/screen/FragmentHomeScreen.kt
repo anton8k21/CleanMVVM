@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,7 +18,9 @@ import com.example.test.homeScreen.presentation.adapter.AdapterHomeScreen
 import com.example.test.homeScreen.presentation.adapter.OnInteractionListener
 import com.example.test.presentation.viewModel.ViewModelHomeScreen
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FragmentHomeScreen : Fragment() {
     private val viewModel: ViewModelHomeScreen by activityViewModels()
     override fun onCreateView(
