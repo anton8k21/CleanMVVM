@@ -2,6 +2,7 @@
 ## Стек приложения
 + kotlin
 + retrofit
++ hilt
 + LiveData
 + Flow
 + ViewBinding
